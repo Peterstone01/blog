@@ -2,7 +2,7 @@ import React from "react";
 import { getMusic } from "../queries/groq";
 import Image from "next/image";
 import Link from "next/link";
-
+export const revalidate = 30; // Revalidate page every 30 seconds
 const Music = async () => {
   const data = await getMusic();
   console.log(data);

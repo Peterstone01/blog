@@ -2,6 +2,7 @@ import React from "react";
 import { getSlug } from "../../components/queries/groq";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+export const revalidate = 30; // Revalidate page every 30 seconds
 const page = async ({ params }) => {
   const data = await getSlug(params.slug);
   console.log(data);

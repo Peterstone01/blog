@@ -1,3 +1,4 @@
+export const revalidate = 30; // Revalidate page every 30 seconds
 import { client } from "../../lib/client";
 ///////////////////////get Hero
 export const getHero = async () => {

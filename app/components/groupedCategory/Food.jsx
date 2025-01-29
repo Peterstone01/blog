@@ -2,7 +2,7 @@ import React from "react";
 import { getFood } from "../queries/groq";
 import Image from "next/image";
 import Link from "next/link";
-
+export const revalidate = 30; // Revalidate page every 30 seconds
 const Food = async () => {
   const data = await getFood();
   console.log(data);
