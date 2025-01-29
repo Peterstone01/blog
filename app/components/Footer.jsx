@@ -9,11 +9,11 @@ import { Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-950 w-full  bottom-0 py-10 px-10 grid grid-cols-1 md:grid-cols-4">
-      <div className=" col-span-2">
+    <div className="bg-slate-950 w-full  bottom-0 py-10 px-10 block space-y-5 md:flex justify-between ">
+      <div className=" md:w-[50%]">
         <Link
           href="/"
-          className="text-primary font-bold text-3xl mb-5 underline "
+          className="text-white font-bold text-3xl mb-5 underline "
         >
           STONEweb
         </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
         </p>
       </div>
       {/* ///////////////////////////////middle */}
-      <div className="text-primary-foreground ">
+      <div className="text-primary-foreground  col-span-1">
         <h1 className="font-bold text-2xl text-primary">Categories</h1>
         <div className="text-primary-foreground font-bold flex flex-col">
           <Link href="/sports"> Sports</Link>
@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       {/* /////////////////////////////Right */}
 
-      <div className="space-y-3">
+      <div className="space-y-3 col-span-1">
         <p className="text-white flex items-center space-x-4">
           <FaWhatsapp className="text-primary w-[20px] h-[20px] " />
           08138979218
